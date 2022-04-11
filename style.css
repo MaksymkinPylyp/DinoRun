@@ -1,9 +1,48 @@
+body {
+    font-family: 'Alegreya', serif;
+}
+
+.gameZone {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    margin: auto;
+}
 .game {
     width: 600px;
     height: 200px;
     border-bottom: 1px solid #000;
     margin: auto;
 }
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.heder {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #000000cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 #dino {
     width: 50px;
     height: 50px;
@@ -22,6 +61,7 @@
     left: 580px;
     animation: cactusMov 1s infinite linear;
 }
+
 @keyframes cactusMov {
     0% {
         left: 580px;
@@ -33,7 +73,6 @@
 
 .jump {
     animation: jump 0.3s linear;
-
 }
 
 @keyframes jump {
